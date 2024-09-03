@@ -73,6 +73,90 @@
             color: #e7e7e8;
             margin-bottom: 40px;
         }
+        .footer {
+            background-color: #202020;
+            padding: 40px 20px;
+            color: #ffffff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .footer-left, .footer-center, .footer-right {
+            flex: 1;
+            padding: 10px;
+        }
+        .footer-left {
+            text-align: left;
+        }
+        .footer-left h2 {
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+        .footer-left p {
+            margin: 0;
+            font-size: 16px;
+            color: #b0b0b0;
+        }
+        .footer-center {
+            text-align: center;
+        }
+        .footer-center h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        .footer-center input[type="email"] {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            width: 250px;
+            margin-right: 10px;
+        }
+        .footer-center button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #e18e8d;
+            color: #ffffff;
+            cursor: pointer;
+        }
+        .footer-right {
+            text-align: right;
+        }
+        .footer-right p {
+            margin: 0;
+            font-size: 16px;
+            color: #b0b0b0;
+        }
+        .footer-right .contact-info {
+            font-size: 16px;
+            color: #b0b0b0;
+            margin-top: 10px;
+        }
+        .footer-right .contact-info a {
+            color: #b0b0b0;
+            text-decoration: none;
+        }
+        .footer-right .contact-info a:hover {
+            color: #ffffff;
+        }
+        .footer .bottom-bar {
+            margin-top: 20px;
+            border-top: 1px solid #444444;
+            padding-top: 10px;
+            font-size: 14px;
+            color: #666666;
+            text-align: center;
+            width: 100%;
+        }
+        .footer .bottom-bar a {
+            color: #666666;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .footer .bottom-bar a:hover {
+            color: #ffffff;
+        }
     </style>
 </head>
 <body>
@@ -229,6 +313,28 @@
             </div>
         </div>
 
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-left">
+                <h2>Programming for Everybody</h2>
+                <p>Learn from an AI expert with hands-on experience in machine learning, NLP, and generative AI, who brings real-time edge case examples and insights into the latest market trends.</p>
+            </div>
+            <div class="footer-center">
+                <h2>Subscribe for Updates</h2>
+                <input type="email" placeholder="Your E-mail">
+                <button>Subscribe</button>
+            </div>
+            <div class="footer-right">
+                <div class="contact-info">
+                    <p>Call us: <a href="tel:0285419786">+91-6303317466</a></p>
+                </div>
+            </div>
+            <div class="bottom-bar">
+                &copy; 2024 Programming for Everybody. All Rights Reserved.
+                <!-- <a href="#">Privacy Policy</a>
+                <a href="#">Terms and Conditions</a> -->
+            </div>
+        </div>
     </div>
 
     <script>
