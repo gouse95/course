@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming for Everybody: Course Overview</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.518), rgba(77, 77, 70, 0.5)), url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 20px;
+            background: rgba(230, 222, 222, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .description {
+            display: none;
+            margin-top: 10px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        .toggle-button {
+            padding: 15px;
+            font-size: 18px;
+            color: #f9fafa;
+            background: none;
+            border: none;
+            cursor: pointer;
+            text-align: left;
+            font-weight: bold;
+            width: 100%;
+            display: block;
+            text-transform: uppercase;
+        }
+        .toggle-button:hover {
+            color: #e18e8d;
+            text-decoration: underline;
+        }
+        .skills, .topics {
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: rgba(236, 54, 54, 0.03);
+        }
+        .skills p, .topics p {
+            margin: 5px 0;
+        }
+        .category {
+            font-weight: bold;
+            margin-top: 10px;
+            text-transform: uppercase;
+            color: #ffcc00;
+        }
+        h1 {
+            font-size: 36px;
+            text-align: center;
+            font-weight: bold;
+            color: #e7e7e8;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Programming for Everybody: Course Overview</h1>
+
+        <!-- Course 1 -->
+        <div class="section">
+            <button class="toggle-button" onclick="toggleDescription('course1')">Course 1: Getting Started with Python</button>
+            <div class="description" id="course1">
+                <p><strong>What you'll learn:</strong></p>
+                <ul>
+                    <li>Install Python and write your first program</li>
+                    <li>Describe the basics of the Python programming language</li>
+                    <li>Use variables to store, retrieve and calculate information</li>
+                    <li>Utilize core programming tools such as functions and loops</li>
+                </ul>
+                <p><strong>Skills you'll gain:</strong></p>
+                <div class="skills">
+                    <p class="category">Python Syntax And Semantics</p>
+                    <p>Python Syntax And Semantics</p>
+                    <p class="category">Data Structure</p>
+                    <p>Data Structure</p>
+                    <p class="category">Tuple</p>
+                    <p>Tuple</p>
+                    <p class="category">Python Programming</p>
+                    <p>Python Programming</p>
+                    <p>Python Data Structures</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Course 2 -->
+        <div class="section">
+            <button class="toggle-button" onclick="toggleDescription('course2')">Course 2: Using Python to Access Web Data</button>
+            <div class="description" id="course2">
+                <p><strong>What you'll learn:</strong></p>
+                <ul>
+                    <li>Explain the principles of data structures & how they are used</li>
+                    <li>Create programs that are able to read and write data from files</li>
+                    <li>Store data as key/value pairs using Python dictionaries</li>
+                    <li>Accomplish multi-step tasks like sorting or looping using tuples</li>
+                </ul>
+                <p><strong>Skills you'll gain:</strong></p>
+                <div class="skills">
+                    <p class="category">Python Syntax And Semantics</p>
+                    <p>Python Syntax And Semantics</p>
+                    <p class="category">Basic Programming Language</p>
+                    <p>Basic Programming Language</p>
+                    <p class="category">Computer Programming</p>
+                    <p>Computer Programming</p>
+                    <p class="category">Python Programming</p>
+                    <p>Python Programming</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Course 3 -->
+        <div class="section">
+            <button class="toggle-button" onclick="toggleDescription('course3')">Course 3: Using Databases with Python</button>
+            <div class="description" id="course3">
+                <p><strong>What you'll learn:</strong></p>
+                <ul>
+                    <li>Use regular expressions to extract data from strings</li>
+                    <li>Understand the protocols web browsers use to retrieve documents and web apps</li>
+                    <li>Retrieve data from websites and APIs using Python</li>
+                </ul>
+                <p><strong>Skills you'll gain:</strong></p>
+                <div class="skills">
+                    <p class="category">Python Programming</p>
+                    <p>Python Programming</p>
+                    <p class="category">Database (DBMS)</p>
+                    <p>Database (DBMS)</p>
+                    <p class="category">Sqlite</p>
+                    <p>Sqlite</p>
+                    <p class="category">SQL</p>
+                    <p>SQL</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Course 4 -->
+        <div class="section">
+            <button class="toggle-button" onclick="toggleDescription('course4')">Course 4: Capstone: Retrieving, Processing, and Visualizing Data with Python</button>
+            <div class="description" id="course4">
+                <p><strong>What you'll learn:</strong></p>
+                <ul>
+                    <li>Use the Create, Read, Update, and Delete operations to manage databases</li>
+                    <li>Explain the basics of Object Oriented Python</li>
+                    <li>Understand how data is stored across multiple tables in a database</li>
+                    <li>Utilize the Google Maps API to visualize data</li>
+                </ul>
+                <p><strong>Skills you'll gain:</strong></p>
+                <div class="skills">
+                    <p class="category">Data Analysis</p>
+                    <p>Data Analysis</p>
+                    <p class="category">Python Programming</p>
+                    <p>Python Programming</p>
+                    <p class="category">Database (DBMS)</p>
+                    <p>Database (DBMS)</p>
+                    <p class="category">Data Visualization</p>
+                    <p>Data Visualization</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Machine Learning Course -->
+        <div class="section">
+            <button class="toggle-button" onclick="toggleDescription('ml_course')">Course 5: Supervised Machine Learning: Regression and Classification</button>
+            <div class="description" id="ml_course">
+                <p><strong>What you'll learn:</strong></p>
+                <ul>
+                    <li>Build machine learning models in Python using popular machine learning libraries NumPy & scikit-learn</li>
+                    <li>Build & train supervised machine learning models for prediction & binary classification tasks, including linear regression & logistic regression</li>
+                </ul>
+                <p><strong>Skills you'll gain:</strong></p>
+                <div class="skills">
+                    <p class="category">Linear Regression</p>
+                    <p>Linear Regression</p>
+                    <p class="category">Regularization to Avoid Overfitting</p>
+                    <p>Regularization to Avoid Overfitting</p>
+                    <p class="category">Logistic Regression for Classification</p>
+                    <p>Logistic Regression for Classification</p>
+                    <p class="category">Gradient Descent</p>
+                    <p>Gradient Descent</p>
+                    <p class="category">Supervised Learning</p>
+                    <p>Supervised Learning</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- NLP Course -->
+        <div class="section">
+            <button class="toggle-button" onclick="toggleDescription('nlp_course')">Course 6: Natural Language Processing (NLP)</button>
+            <div class="description" id="nlp_course">
+                <p><strong>What you'll learn:</strong></p>
+                <ul>
+                    <li>Understand the fundamentals of Natural Language Processing (NLP) and its applications</li>
+                    <li>Use Python libraries like NLTK and spaCy to process and analyze text</li>
+                    <li>Implement text classification and sentiment analysis using machine learning</li>
+                    <li>Apply Named Entity Recognition (NER) to extract information from text</li>
+                </ul>
+                <p><strong>Skills you'll gain:</strong></p>
+                <div class="skills">
+                    <p class="category">Text Processing</p>
+                    <p>Text Processing</p>
+                    <p class="category">Named Entity Recognition (NER)</p>
+                    <p>Named Entity Recognition (NER)</p>
+                    <p class="category">Sentiment Analysis</p>
+                    <p>Sentiment Analysis</p>
+                    <p class="category">Language Modeling</p>
+                    <p>Language Modeling</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function toggleDescription(id) {
+            var desc = document.getElementById(id);
+            if (desc.style.display === 'none' || desc.style.display === '') {
+                desc.style.display = 'block';
+            } else {
+                desc.style.display = 'none';
+            }
+        }
+    </script>
+
+</body>
+</html>
