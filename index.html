@@ -112,21 +112,21 @@
             width: 150px;
             margin-right: 10px;
         }
-        .footer-center input[type="collage"] {
+        .footer-center input[type="college"] {
             padding: 1px;
             border: none;
             border-radius: 5px;
             width: 150px;
             margin-right: 10px;
         }
-        .footer-center input[type="Contact Number"] {
+        .footer-center input[type="contactNumber"] {
             padding: 1px;
             border: none;
             border-radius: 5px;
             width: 150px;
             margin-right: 10px;
         }
-        .footer-center input[type="Any Querys"] {
+        .footer-center input[type="query"] {
             padding: 1px;
             border: none;
             border-radius: 5px;
@@ -136,10 +136,11 @@
         .footer-center button {
             padding: 10px 20px;
             border: none;
-            border-radius: 5px;
+            border-radius: 15px;
             background-color: #e18e8d;
             color: #ffffff;
             cursor: pointer;
+            margin-top: 10px;
         }
         .footer-right {
             text-align: right;
@@ -412,7 +413,7 @@
             })
             .catch((error) => {
                 console.error('Fetch error:', error);  // Log the error to the console
-                document.getElementById('responseMessage').innerText = 'Error: Could not complete the registration';
+                document.getElementById('responseMessage').innerText = 'connect with admin or drop a mail';
             });
 
         });
@@ -433,6 +434,24 @@
             event.preventDefault();
         });
     </script>
+
+    <script>
+        // Disable right-click
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+        });
+
+        // Disable F12, Ctrl+Shift+I, Ctrl+U, and Ctrl+Shift+C
+        document.onkeydown = function(event) {
+            if (event.key === "F12" || 
+            (event.ctrlKey && event.shiftKey && event.key === "I") ||
+            (event.ctrlKey && event.shiftKey && event.key === "C") || 
+            (event.ctrlKey && event.key === "U")) {
+                event.preventDefault();
+            }
+        };
+    </script>
+
 
         
 </body>
